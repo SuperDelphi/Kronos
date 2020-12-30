@@ -1,4 +1,5 @@
 from time import time
+from numpy import subtract
 
 
 def kalk(callback, display=False, iteration_count=1, complete_data=False, input_data_callback=None, **kwargs):
@@ -33,11 +34,11 @@ def kalk(callback, display=False, iteration_count=1, complete_data=False, input_
 		if input_data_callback:
 			it_start_time = time() * 1000
 			return_data.append(callback(**input_data_callback(nth_iteration=it), **kwargs))
-			it_duration = time() * 1000 - it_start_time
+			it_duration = subtract(time() * 1000, it_start_time)
 		else:
 			it_start_time = time() * 1000
 			return_data.append(callback(**kwargs))
-			it_duration = time() * 1000 - it_start_time
+			it_duration = subtract(time() * 1000, it_start_time)
 		total_duration += it_duration
 		if complete_data:
 			durations.append(it_duration)
@@ -63,3 +64,4 @@ def kalk(callback, display=False, iteration_count=1, complete_data=False, input_
 			print("      Average time:", average_duration, "ms")
 	
 	return data
+
