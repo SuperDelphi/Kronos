@@ -64,4 +64,3 @@ def kalk(callback, display=False, iteration_count=1, complete_data=False, input_
 			print("      Average time:", average_duration, "ms")
 	
 	return data
-
