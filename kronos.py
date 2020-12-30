@@ -1,5 +1,4 @@
 from time import time
-from decimal import Decimal
 
 
 def kalk(callback, display=False, iteration_count=1, complete_data=False, **kwargs):
@@ -18,16 +17,17 @@ def kalk(callback, display=False, iteration_count=1, complete_data=False, **kwar
 	total_duration = 0
 	average_duration = None
 	durations = []
+	return_data = None
 	
 	if display:
 		print("[KRS] Starting...")
 
 	for it in range(iteration_count):
-		it_start_time = Decimal(time())
+		it_start_time = time() * 1000
 		# Invoking callback
 		return_data = callback(**kwargs)
 		# Invoking callback
-		it_duration = Decimal((Decimal(time()) - it_start_time) * 1000)
+		it_duration = time() * 1000 - it_start_time
 		total_duration += it_duration
 		if complete_data:
 			durations.append(it_duration)
