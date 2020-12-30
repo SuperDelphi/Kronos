@@ -22,7 +22,7 @@ def kalk(callback, display=False, iteration_count=1, complete_data=False, input_
 	total_duration = 0
 	average_duration = None
 	durations = []
-	return_data = None
+	return_data = []
 	
 	if display:
 		print("[KRS] Starting...")
@@ -32,11 +32,11 @@ def kalk(callback, display=False, iteration_count=1, complete_data=False, input_
 		# to be more accurate.
 		if input_data_callback:
 			it_start_time = time() * 1000
-			return_data = callback(**input_data_callback(nth_iteration=it), **kwargs)
+			return_data.append(callback(**input_data_callback(nth_iteration=it), **kwargs))
 			it_duration = time() * 1000 - it_start_time
 		else:
 			it_start_time = time() * 1000
-			return_data = callback(**kwargs)
+			return_data.append(callback(**kwargs))
 			it_duration = time() * 1000 - it_start_time
 		total_duration += it_duration
 		if complete_data:
