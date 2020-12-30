@@ -20,13 +20,17 @@ from kronos import kalk
 #### Basic Example
 
 ```python
+# Kronos module import
 import kronos as k
 
+# The function whose execution time is to be measured
 def add(x, y):
     return x ** y
 
+# Retrieval of the results
 results = k.kalk(add, x=9999, y=9999)
 
+# Display of the total duration
 print(results["total_duration"])
 ```
 
