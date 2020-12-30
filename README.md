@@ -24,11 +24,11 @@ from kronos import kalk
 import kronos as k
 
 # The function whose execution time is to be measured
-def add(x, y):
+def pow(x, y):
     return x ** y
 
 # Retrieval of the results
-results = k.kalk(add, x=9999, y=9999)
+results = k.kalk(pow, x=9999, y=9999)
 
 # Display of the total duration
 print(results["total_duration"])
