@@ -37,3 +37,7 @@ print(results["total_duration"])
 Output (in ms): ``5.00146484375``
 
 *Note: The result must (obviously) vary depending on the machine used and the context of execution.*
+
+## Documentation
+
+For more information about Kronos, please check out the Wiki [here](https://github.com/SuperDelphi/Kronos/wiki).
