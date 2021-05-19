@@ -2,6 +2,8 @@
 
 A light-weight and easy-to-use Python module to calculate the process duration of your code with a complete set of result data on the process.
 
+**Please be aware that this module is for educational purpose only. There are better ones to get the job done :)**
+
 *Note: Kronos is not available via a standard ``pip`` installation yet.*
 
 ### Known issues
