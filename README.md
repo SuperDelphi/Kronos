@@ -1,3 +1,5 @@
+![Kronos logo](https://raw.githubusercontent.com/SuperDelphi/Kronos/main/logo.png)
+
 # Kronos &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SuperDelphi/Kronos/blob/main/LICENSE)
 
 A light-weight and easy-to-use Python module to calculate the process duration of your code with a complete set of result data on the process.
