@@ -13,7 +13,7 @@ A light-weight and easy-to-use Python module to calculate the process duration o
 
 ## Getting Started
 
-The only file you will need is ``kronos.py``, located at the root of the ``master`` branch.
+The only file you need is ``kronos.py``, located at the root of the ``master`` branch.
 
 #### Importing the module only function
 
